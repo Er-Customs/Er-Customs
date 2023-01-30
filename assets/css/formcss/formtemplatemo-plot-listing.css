@@ -351,7 +351,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 14px;
-  color: #fff;
+  color: #8d99af;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -365,7 +365,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #8d99af!important;
+  color: #075bf8!important;     /*hover of nav tag*/
 }
 
 .background-header .main-nav .nav li:hover a,

@@ -6,7 +6,25 @@ body {
   color: #262626;
   margin: 5% 0;
 }
-
+.state{
+  width: 296px;
+}
+::placeholder{
+  font-size: small;
+  color: #bcbcbc;
+}
+.country,.fname,.lname, .cn,.city,.Postcode,.Phone,.Email{
+  width:auto;
+  max-width: 340px;
+}
+span.Landmark{
+  width:75%;
+}
+.houseadd1{
+  width: 10px;
+  flex-direction: column;
+  margin-right: 2px;
+}
 .titlecan {
   /* margin-top: 100px; */
   box-sizing: 200px;
@@ -52,10 +70,12 @@ body {
 
 .d-flex {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   background: #f6f6f6;
   border-radius: 0 0 5px 5px;
   padding: 25px;
+  margin: 0px 150px;
+  max-height:auto ;
 }
 
 form {
@@ -75,6 +95,7 @@ form {
   border-radius: 5px 5px 0 0;
   padding: 20px;
   color: #f6f6f6;
+  margin: 0px 150px;
 }
 
 h2 {
@@ -103,24 +124,24 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 select {
-  width: 70%;
+  width: 86%;
   height: 30px;
-  padding: 5px 10px;
-  margin-bottom: 10px;
+  /* padding: 5px 10px; */
+  margin-top: 2px;
   border: 1px solid #dadada;
   color: #888;
 }
 
 select {
-  width: 72%;
-  height: 45px;
+  width: 90%;
+  height: 31px;
   padding: 5px 10px;
   margin-bottom: 10px;
 }
 
 .Yorder {
   margin-top: 15px;
-  height: 600px;
+  height: 800px;
   padding: 20px;
   border: 1px solid #dadada;
 }
