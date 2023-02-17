@@ -9,11 +9,41 @@ body {
 .state{
   width: 296px;
 }
+.containertype span,.length span,.width span ,span.height{
+  width: 200px;
+}
+label.containertype{
+  width: 335px;
+}
+.containertype select{
+  width: 86%;
+}
+label.length{
+  width: 308.4px;
+}
+.length input{
+  width: 90%;
+}
+.width span{
+  width: 200px;
+}
+label.width{
+  width: 317.29px;
+}
+.width input{
+  width: 280.77px;
+}
+label .height{
+  width: 117.29px;
+}
+.height input{
+  width: 222.86px;
+}
 ::placeholder{
   font-size: small;
   color: #bcbcbc;
 }
-.country,.fname,.lname, .cn,.city,.Postcode,.Phone,.Email{
+.country,.fname,.lname, .cn,.city,.Postcode,.Phone,.Email,.weight{
   width:auto;
   max-width: 340px;
 }
