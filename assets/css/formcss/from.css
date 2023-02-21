@@ -9,7 +9,7 @@ body {
 .state{
   width: 296px;
 }
-.containertype span,.length span,.width span ,span.height{
+.containertype span,.length span,.width span ,span.height,span.cardtype,.Yorder span.cardno,.Yorder span.expirydate{
   width: 200px;
 }
 label.containertype{
@@ -37,6 +37,15 @@ label .height{
   width: 117.29px;
 }
 .height input{
+  width: 222.86px;
+}
+label.expirydate{
+  width: 317.29px;
+}
+.expirydate input{
+  width: 222.86px;
+}
+input .cardno{
   width: 222.86px;
 }
 ::placeholder{
@@ -173,7 +182,6 @@ select {
   margin-top: 15px;
   height: 800px;
   padding: 20px;
-  border: 1px solid #dadada;
 }
 
 table {

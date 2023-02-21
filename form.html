@@ -409,7 +409,16 @@
                 </label>
                 <label>
                     <span class="Email">Email Address <span class="required">*</span></span>
-                    <input type="email" name="city" size="18" required placeholder="eg. xyz@gmail.com">>
+                    <input type="email" name="city" size="18" required placeholder="eg. xyz@gmail.com">
+                </label>
+                <label class="containertype">
+                    <span>Type of Transportation <span class="required">*</span></span>
+                    <select name="selectionofcontainer" required>
+                        <option value="select">Select a Type of Transportation</option>
+                        <option value="By Air">By Air</option>
+                        <option value="By Road">By Road</option>
+                        <option value="By Ship">By Ship</option>
+                    </select>
                 </label>
             </form>
             <hr size="3px" color="#bcbcbc">
@@ -758,7 +767,7 @@
                     <span>Type of container... <span class="required">*</span></span>
                     <select name="selectionofcontainer" required>
                         <option value="select">Select a Type of Container</option>
-                        <option value="Normal Container">Normal Container</option>
+                        <option value="NormalContainer">Normal Container</option>
                         <option value="Refrigerated Containers">Refrigerated Containers</option>
                         <option value="Safety Locker">Safety Locker</option>
                         <option value="Cold Storage">Cold Storage</option>
@@ -769,63 +778,30 @@
                     <input type="text" name="weight" placeholder="In kg" required>
                 </label>
             </form>
-            <!------------------------------------------ How would you like to ship?satrts ------------------------------------------>
+            <!----------------------------------How would you like to pay?starts-------------------------------------------->
             <hr size="3px" color="#bcbcbc">
-            <form action="" method="">
-                <h4>How would you like to ship?</h4>
-                <label class="containertype">
-                    <span>type of transportation <span class="required">*</span></span>
-                    <select name="selectionofcontainer" required>
-                        <option value="select">Select a type of Transportation</option>
-                        <option value="By Air">By Air</option>
-                        <option value="By Road">By Road</option>
-                        <option value="By Ship">By Ship</option>
-                    </select>
-                </label>
-                <label>
-                    <span class="weight"> Weight <span class="required">*</span></span>
-                    <input type="text" name="weight" placeholder="In kg" required>
-                </label>
-            </form>
-            <hr size="3px" color="#bcbcbc">
-            <!----------------------------------What kind of packing are you using?starts-------------------------------------------->
             <div class="Yorder">
-                <table>
-                    <tr>
-                        <th colspan="2">Your order</th>
-                    </tr>
-                    <tr>
-                        <td>Product Name x 2(Qty)</td>
-                        <td>$88.00</td>
-                    </tr>
-                    <tr>
-                        <td>Subtotal</td>
-                        <td>$88.00</td>
-                    </tr>
-                    <tr>
-                        <td>Shipping</td>
-                        <td>Free shipping</td>
-                    </tr>
-                </table><br>
-                <div>
-                    <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
-                </div>
-                <p>
-                    Make your payment directly into our bank account. Please use your Order ID as the payment reference.
-                    Your order will not be shipped until the funds have cleared in our account.
-                </p>
-                <div>
-                    <input type="radio" name="dbt" value="cd"> Cash on Delivery
-                </div>
-                <div>
-                    <input type="radio" name="dbt" value="cd"> Paypal <span>
-                        <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg"
-                            alt="" width="50">
-                    </span>
-                </div>
-                <button type="button">Place Order</button>
-            </div><!-- Yorder -->
+            <form action="" method="">
+                <h4>How would you like to pay?</h4>
+                    <label>
+                        <span class="cardtype">Card Type <span class="required">*</span></span>
+                        <select name="selectionofcardtype" required>
+                            <option value="select">select One</option>
+                            <option value="Visa">Visa</option>
+                            <option value="Master Card">Master Card</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span class="cardno">Card Number<span class="required">*</span></span>
+                        <input type="text" class="cardno"name="cardno" placeholder="Card Number" required>
+                    </label>
+                    <label>
+                        <span class="expirydate">expiry date<span class="required">*</span></span>
+                        <input type="date" class="expirydate" name="expirydate" placeholder="" required>
+                    </label>
+            </form>
         </div>
+    </div>
     </div>
 </body>
 
