@@ -6,64 +6,126 @@ body {
   color: #262626;
   margin: 5% 0;
 }
-.state{
+
+.state {
   width: 296px;
 }
-.containertype span,.length span,.width span ,span.height,span.cardtype,.Yorder span.cardno,.Yorder span.expirydate{
+
+.containertype span,
+.length span,
+.width span,
+span.height,
+span.cardtype,
+.Yorder span.cardno,
+.Yorder span.expirydate {
   width: 200px;
 }
-label.containertype{
+
+label.containertype {
   width: 335px;
 }
-.containertype select{
+
+.containertype select {
   width: 86%;
 }
-label.length{
+
+label.length {
   width: 308.4px;
 }
-.length input{
+
+.length input {
   width: 90%;
 }
-.width span{
+
+.width span {
   width: 200px;
 }
-label.width{
+
+label.width {
   width: 317.29px;
 }
-.width input{
+
+.width input {
   width: 280.77px;
 }
-label .height{
+
+label .height {
   width: 117.29px;
 }
-.height input{
+
+.height input {
   width: 222.86px;
 }
-label.expirydate{
+
+label.expirydate {
   width: 317.29px;
 }
-.expirydate input{
+
+.expirydate input {
   width: 222.86px;
 }
-input .cardno{
+
+input .cardno {
   width: 222.86px;
 }
-::placeholder{
+
+label.cardnolable {
+  width: 280px;
+}
+
+label.expirydatelable {
+  width: 100.29px;
+}
+
+label.cvvlable {
+  width: 100.29px;
+}
+
+input.expirydate {
+  width: 20.86px;
+}
+
+input.cvv {
+  width: 80px;
+}
+
+label.submitlable {
+  margin-left: 500px;
+}
+input.submit{
+  box-sizing: border-box;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+::placeholder {
   font-size: small;
   color: #bcbcbc;
 }
-.country,.fname,.lname, .cn,.city,.Postcode,.Phone,.Email,.weight{
-  width:auto;
+
+.country,
+.fname,
+.lname,
+.cn,
+.city,
+.Postcode,
+.Phone,
+.Email,
+.weight {
+  width: auto;
   max-width: 340px;
 }
-span.Landmark{
-  width:75%;
+
+span.Landmark {
+  width: 75%;
 }
-.houseadd1{
+
+.houseadd1 {
   width: 10px;
   flex-direction: column;
   margin-right: 2px;
 }
+
 .titlecan {
   /* margin-top: 100px; */
   box-sizing: 200px;
@@ -109,12 +171,12 @@ span.Landmark{
 
 .d-flex {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   background: #f6f6f6;
   border-radius: 0 0 5px 5px;
   padding: 25px;
   margin: 0px 150px;
-  max-height:auto ;
+  max-height: auto;
 }
 
 form {

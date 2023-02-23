@@ -791,13 +791,22 @@
                             <option value="Master Card">Master Card</option>
                         </select>
                     </label>
-                    <label>
+                    <label class="cardnolable">
                         <span class="cardno">Card Number<span class="required">*</span></span>
                         <input type="text" class="cardno"name="cardno" placeholder="Card Number" required>
                     </label>
-                    <label>
+                    <label class="expirydatelable">
                         <span class="expirydate">expiry date<span class="required">*</span></span>
-                        <input type="date" class="expirydate" name="expirydate" placeholder="" required>
+                        <input type="text" class="expirydate" name="expirydate" placeholder="MM/YY" required>
+                    </label>
+                    <label class="cvvlable">
+                        <span class="cvv">cvv<span class="required">*</span></span>
+                        <input type="text" class="cvv" name="cvv" placeholder="" required>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="submitlable">
+                        <input type="submit" class="submit" name="submit" placeholder="" required>
                     </label>
             </form>
         </div>
