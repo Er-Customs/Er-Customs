@@ -176,7 +176,7 @@ span.Landmark {
   border-radius: 0 0 5px 5px;
   padding: 25px;
   margin: 0px 150px;
-  max-height: auto;
+  max-height: 1500PX;
 }
 
 form {

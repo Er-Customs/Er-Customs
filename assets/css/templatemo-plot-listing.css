@@ -210,15 +210,6 @@ img {
   padding: 2em;
 }
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
 .col-sm-6 span {
   box-sizing: border-box;
   display: inline-block;
@@ -258,6 +249,67 @@ img {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+.h-pad {
+  padding: 1em;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.volza-reducetask-text {
+  padding: 5em !important;
+}
+
+.h-pa-bg {
+  background-color: #f7f7f7 !important;
+  padding: 2em;
+}
+
+.h-pad {
+  padding: 1em;
+}
+
+.p-text-box {
+  margin-right: 10em;
+}
+
+.p-text {
+  line-height: 25px;
+  font-size: 16px;
+  color: #000;
+}
+
+img.icon-search-icons.vc_single_image-img {
+  width: 390px;
+
+}
+
+img.icon-screen-support.vc_single_image-img {
+  width: 390px;
+}
+
+img.icon-money-back.vc_single_image-img {
+  width: 390px;
+}
+
+div.col-sm-6.grow-business-text {
+  padding: 5em;
 }
 
 /*  */
