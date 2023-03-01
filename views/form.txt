@@ -1,0 +1,12 @@
+details of package (all required)
+    1. packaging type
+    2. dimension
+    3. 
+
+how
+    1. type of transportation
+    2. pickup data
+    3. pickup address and time
+
+payment
+    1. payment

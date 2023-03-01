@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formcss/from.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+        integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/icon" href="/images/favicon.ico">
+    <title>WFS</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/css/formcss/formanimated.css">
+    <link rel="stylesheet" href="/css/formcss/formfontawesome.css">
+    <link rel="stylesheet" href="/css/formcss/formowl.css">
+    <link rel="stylesheet" href="/css/formcss/formtemplatemo-plot-listing.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <!-- <a href="index" class="logo">
+                
+                </a> -->
+                        <img src="/images/black-logo.png" alt="" srcset="" class="logo">
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="/" class="active">Home</a></li>
+                            <li><a href="/category">Category</a></li>
+                            <li><a href="/listing">Listing</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li>
+                                <div class="main-white-button"><a href="/"><i class="fa fa-solid fa fa-user"></i> Home</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="titlecan">
+        <section class="CAN">
+            <img src="/images/form-banner.jpg" alt="" srcset="" class="canimg" height="350px">
+            <p> CREATE A NEWSHIPMENT</p>
+        </section>
+    </div>
+    <div class="container-nav">
+        <div class="title">
+            <h2>Product Order Form</h2>
+        </div>
+        <div class="d-flex">
+            <!------------------------------------------------Where are you shipping from? starts---------------------------------------------------->
+            <form action="/form" method="post">
+                <h4>Where are you shipping from?</h4>
+                <label class="country" id="country">
+                    <span class="country">Country <span class="required">*</span></span>
+                    <input type="text" name="country" placeholder="Country" id="">
+                </label>
+                <label>
+                    <span class="fname">First Name <span class="required">*</span></span>
+                    <input type="text" name="fname" placeholder="First Name" required>
+                </label>
+                <label>
+                    <span class="cn">Last Name<span class="required">*</span></span>
+                    <input type="text" name="lname" class="cnin" placeholder="Last Name" required>
+                </label>
+
+                <label>
+                    <span class="address"> Address <span class="required">*</span></span>
+                    <input type="text" name="houseadd1" size="200" placeholder="Address" required class="houseadd1">
+                </label>
+                <label class="lm">
+                    <span class="Landmark"> Landmark <span class="required">*</span></span>
+                    <input type="text" name="Landmark" size="24" placeholder="Landmark" required class="houseadd2">
+                </label>
+                <label>
+                    <span class="city">Town / City <span class="required">*</span></span>
+                    <input type="text" name="city" required placeholder="City">
+                </label>
+                <label class="state">
+                    <span class="state">State<span class="required">*</span></span>
+                    <input type="text" name="state" placeholder="State Name" id="">
+                </label>
+                <label>
+                    <span class="Postcode">Postcode / ZIP <span class="required">*</span></span>
+                    <input type="text" name="postcode" required placeholder="ex.360005">
+                </label>
+                <label>
+                    <span class="Phone">Phone <span class="required">*</span></span>
+                    <input type="tel" name="phone" size="24.5" required placeholder="Phone No.">
+                </label>
+                <label>
+                    <span class="Email">Email Address <span class="required">*</span></span>
+                    <input type="email" name="email" size="18" required placeholder="eg. xyz@gmail.com">
+                </label>
+                <label class="containertype">
+                    <span>Type of Transportation <span class="required">*</span></span>
+                    <select name="selectionofcontainer" required>
+                        <option value="select">Select a Type of Transportation</option>
+                        <option value="By Air">By Air</option>
+                        <option value="By Road">By Road</option>
+                        <option value="By Ship">By Ship</option>
+                    </select>
+                </label>
+                <hr size="3px" color="#bcbcbc">
+                <!------------------------------------------Where are you shipping from? ends------------------------------------------------------------>
+                <!---------------------------Where is your shiping going ? starts------------------------------------------------------------------------>
+                <h4>Where is your shiping going?</h4>
+                <label class="country">
+                    <span>Country <span class="required">*</span></span>
+                    <label class="country" id="country">
+                        <span class="country">Country <span class="required">*</span></span>
+                        <input type="text" name="country1" placeholder="Country" id="">
+                    </label>
+                </label>
+                <label>
+                    <span class="fname">First Name <span class="required">*</span></span>
+                    <input type="text" name="fname1" placeholder="First Name" required>
+                </label>
+                <label>
+                    <span class="cn">Last Name<span class="required">*</span></span>
+                    <input type="text" name="lname1" class="cnin" placeholder="Last Name" required>
+                </label>
+
+                <label>
+                    <span class="address"> Address <span class="required">*</span></span>
+                    <input type="text" name="houseadd2" size="200" placeholder="Address" required class="houseadd1">
+                </label>
+                <label class="lm">
+                    <span class="Landmark"> Landmark <span class="required">*</span></span>
+                    <input type="text" name="Landmark1" size="24" placeholder="Landmark" required class="houseadd2">
+                </label>
+                <label>
+                    <span class="city">Town / City <span class="required">*</span></span>
+                    <input type="text" name="city1" required placeholder="City">
+                </label>
+                <label class="state">
+                    <span class="state">State<span class="required">*</span></span>
+                    <input type="text" name="state1" placeholder="State Name" id="">
+                </label>
+                <label>
+                    <span class="Postcode">Postcode / ZIP <span class="required">*</span></span>
+                    <input type="text" name="postcode1" required placeholder="ex.360005">
+                </label>
+                <label>
+                    <span class="Phone">Phone <span class="required">*</span></span>
+                    <input type="tel" name="phone1" size="24.5" required placeholder="Phone No.">
+                </label>
+                <label>
+                    <span class="Email">Email Address <span class="required">*</span></span>
+                    <input type="email" name="email1" size="18" required placeholder="eg. xyz@gmail.com">
+                </label>
+                <hr size="3px" color="#bcbcbc">
+
+                <!-------------------------------------------Where is your shiping going? ends------------------------------------------->
+                <!----------------------------------What kind of packing are you using?starts-------------------------------------------->
+                <h4>What kind of packing are you using?</h4>
+                <label class="containertype">
+                    <span>Type of container... <span class="required">*</span></span>
+                    <select name="containertype" required>
+                        <option value="select">Select a Type of Container</option>
+                        <option value="NormalContainer">Normal Container</option>
+                        <option value="Refrigerated Containers">Refrigerated Containers</option>
+                        <option value="Safety Locker">Safety Locker</option>
+                        <option value="Cold Storage">Cold Storage</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="weight"> Weight <span class="required">*</span></span>
+                    <input type="text" name="weight" placeholder="In kg" required>
+                </label>
+                <!----------------------------------How would you like to pay?starts-------------------------------------------->
+                <hr size="3px" color="#bcbcbc">
+                <div class="Yorder">
+                    <h4>How would you like to pay?</h4>
+                    <label>
+                        <span class="cardtype">Card Type <span class="required">*</span></span>
+                        <select name="selectionofcardtype" required>
+                            <option value="select">select One</option>
+                            <option value="Visa">Visa</option>
+                            <option value="Master Card">Master Card</option>
+                        </select>
+                    </label>
+                    <label class="cardnolable">
+                        <span class="cardno">Card Number<span class="required">*</span></span>
+                        <input type="text" class="cardno" name="cardno" placeholder="Card Number" required>
+                    </label>
+                    <label class="expirydatelable">
+                        <span class="expirydate">expiry date<span class="required">*</span></span>
+                        <input type="text" class="expirydate" name="expirydate" placeholder="MM/YY" required>
+                    </label>
+                    <label class="cvvlable">
+                        <span class="cvv">cvv<span class="required">*</span></span>
+                        <input type="text" class="cvv" name="cvv" placeholder="" required>
+                    </label>
+                    <br>
+                    <br>
+                    <label class="submitlable">
+                        <input type="submit" class="submit" name="submit" placeholder="" required>
+                    </label>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

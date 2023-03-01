@@ -1,0 +1,94 @@
+11)
+DECLARE
+
+emp_id number := &number;
+stars employees.stars%type;
+emp_sal employees.sal%type;
+num_stars employees.stars%type;
+
+BEGIN
+
+select round(sal/1000) into emp_sal from employees where empno = emp_id;
+
+FOR i IN 1..emp_sal LOOP
+
+num_stars := '* ' || num_stars ;
+
+END LOOP;
+
+--select stars from employees;
+
+update employees set stars = num_stars where empno = emp_id;
+dbms_output.put_line(emp_sal);
+
+END;
+/
+
+
+
+
+
+
+12.A)
+DECLARE
+
+CURSOR emp_cursor IS
+select * from employee;
+
+v_emp employee%rowtype;
+
+BEGIN
+
+OPEN emp_cursor;
+
+LOOP
+
+FETCH emp_cursor INTO v_emp;
+
+EXIT WHEN emp_cursor%NOTFOUND;
+
+dbms_output.put_line(v_emp.emp_no||'   '|| v_emp.emp_name ||'  '||v_emp.emp_sal ||'  '||v_emp.emp_comm ||'  '||v_emp.dept_no);
+
+END LOOP;
+CLOSE emp_cursor;
+
+
+END;
+/
+
+
+
+
+12.B)
+DECLARE
+
+dept employee.dept_no%type := &dept_no;
+
+CURSOR emp_cursor IS
+select emp_sal,manager_id,l_name from employee where dept_no = dept;
+
+emp emp_cursor%rowtype;
+
+BEGIN
+
+OPEN emp_cursor;
+
+LOOP
+FETCH emp_cursor INTO emp;
+dbms_output.put_line(emp.emp_sal||'    '||emp.manager_id);
+EXIT WHEN emp_cursor%NOTFOUND;
+
+IF(emp.emp_sal<1000 and emp.manager_id = 7902 or emp.manager_id = 7839) THEN
+dbms_output.put_line(emp.l_name ||'  '||'Due for a raise');
+
+ELSE
+dbms_output.put_line(emp.l_name ||'  '||'Not due for a raise');
+
+END IF;
+
+END LOOP;
+CLOSE emp_cursor;
+
+
+END;
+/
